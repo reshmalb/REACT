@@ -46,3 +46,12 @@
 .expense-item_price:hover{
     color:blueviolet;
 }
+.button-delete{
+    border-radius: 12px;
+    justify-content: center;
+    color:white;
+    background-color:rgb(13, 28, 37);
+}
+.button-delete:hover{
+    color: rgb(26, 96, 98);
+}
