@@ -16,10 +16,12 @@ const ExpenseItem=(props)=>{
                  <div className="expense-item_description">       
                     {title}</div>
                  <div className="expense-item_price">${amount}
-                <button  className="button-delete"
-                 onClick={clickHandler}>change amount</button>
-                 
                  </div>
+            <div className='btn'>
+                    <button  id="button-delete"
+                 onClick={clickHandler}>Change Amount</button>
+                 
+                 </div> 
           </div>
      </div>
     

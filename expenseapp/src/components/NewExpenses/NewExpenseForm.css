@@ -1,0 +1,68 @@
+/* .new-expense_controls{
+    margin-left:30%;
+    margin-right:20%;
+    background-color: rgb(69, 28, 215);   
+    padding:0;
+    max-width: 300px;
+    min-height:100px ;
+    margin-top:20px;
+ 
+} */
+.new-expense-2{
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(120, 69, 222);
+    box-shadow: 0 2px 8px rgba(0,0,0,25) ;
+    padding:0;
+    max-width: 400px;
+    min-height:150px ;
+    margin-top: 20px;
+    color:white;
+    display:flex;
+    text-decoration: solid;
+    
+ 
+   
+}
+
+/* form data*/
+
+
+.expense_cotrols_form{    
+   background-color: rgb(13, 28, 37);
+   margin-top: 20px;  
+   margin-left: auto;   
+   margin-right: auto;  
+   width: 250px;
+   height: 250px;
+   flex-direction: column;
+
+ 
+}
+.new-expense_control{
+    
+    margin-top: 20px;
+    border-radius: 12px;
+    display:flex;
+    text-align:left;
+    flex-direction: column;
+    margin-right: 20px;
+     
+    
+}
+
+.new-expense_actions{
+    border-radius: 12px;
+    color:white;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #btn-sbt{
+    font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+  }
+  .input-group1{
+    
+    height: 25px;
+    width: 250px;
+  }

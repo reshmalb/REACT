@@ -46,23 +46,27 @@
 .expense-item_price:hover{
     color:blueviolet;
 }
-.button-delete{
+#button-delete{
     border-radius: 12px;
-    justify-content: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
     color:white;
-    background-color:rgb(13, 28, 37);
-    gap: 4rem;
+    background-color:rgb(46, 132, 186);
+    margin-right: 0px;
+    align-items: center;
+    margin-top: 21px;
 }
-  
+d
 .button-container{
     justify-content: center;
+    align-items: center;
     font-weight: bold;
     align-items: center;
     margin-top: 20px;
     padding: 0;
 }
 
-.button-delete:hover{
-    color: rgb(26, 96, 98);
+#button-delete:hover{
+    color: rgb(168, 173, 173);
   
 }
