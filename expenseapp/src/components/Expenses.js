@@ -6,13 +6,15 @@ import Card from "./Card"
 
 
 const Expenses=(props)=>{
-    <Card className="expense-item-container">
+    return(
+    <div >
     <ExpenseItem date={props.items[0].date} 
                 title={props.items[0].title}
                 amount={props.items[0].amount} ></ExpenseItem>
    <ExpenseItem date={props.items[1].date} 
                 title={props.items[0].title}
                 amount={props.items[0].amount} ></ExpenseItem>
-   </Card>
+   </div>
+    )
 }
 export default Expenses;
