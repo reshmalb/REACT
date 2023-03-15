@@ -35,7 +35,7 @@ const NewExpenseForm = (props) => {
         setEnteredAmount('');
         setEnteredDate('')
     }
-    return (  
+    return (props.trigger)? (  
          <form onSubmit={submitHandler} className="expense_cotrols_form">
             <div className="new-expense_control">
                 <label>Title</label>
@@ -51,9 +51,11 @@ const NewExpenseForm = (props) => {
             </div>
             <div className="new-expense_actions">
                 <button type="submit" id="btn-sbt" >Add Expense</button>
+                <button  id="btn-cancel" onClick={()=>props.setTrigger(false)} >Cancel</button>
+
             </div>
     </form>
     
-    );
+    ):"";
 }
 export default NewExpenseForm;
