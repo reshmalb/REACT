@@ -1,7 +1,7 @@
 .expense-item-container{
   margin-left:30%;
   margin-right:20%;
-  background-color: rgb(24, 22, 31);
+  background-color: rgb(116, 195, 252);
   box-shadow: 0 2px 8px rgba(0,0,0,25) ;
   border-radius: 30px;
   padding:0;
@@ -12,5 +12,11 @@
   justify-content: center;
 
 
+}
+#info-msg{
+  color:rgb(191, 76, 76);
+  font-size: x-large;
+  font-weight: bold;
+  justify-content: flex-end;
 }
 

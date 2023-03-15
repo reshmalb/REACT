@@ -1,45 +1,46 @@
 import React ,{useState} from 'react';
 import './App.css';
-import ExpenseItem from './components/ExpenseItem';
 import NewExpense from './components/NewExpenses/NewExpense';
 import Expenses from './components/Expenses';
+
 function App() { 
-const[details,setDetails]=useState([
-  {date:new Date(2021,5,2),
-  title:'vacation',
-   amount:300}
-]);
-const addExpenseHandler=(expense)=>{
-  console.log(expense)
-  console.log(expense.date)
-  console.log(expense.title)
-  console.log(expense.amount)
-  const data=[
-    { 
-      date:expense.date,
-    title:expense.title,
-    amout:expense.amount
-    }
-  ];
-  setDetails([...details,expense])
- 
+  //DUMMY DATA
+  const dummy=[
+    { id:'e1',
+      date:new Date(2020,5,2),
+    title:'vacation',
+     amount:300},
+     {
+      id:'e2',
+      date:new Date(2022,3,5),
+    title:'news paper',
+     amount:500},
+     {
+     id:'e3',
+      date:new Date(2020,6,9),
+    title:'education',
+     amount:700},
+     {
+     id:'e4',
+      date:new Date(2019,8,10),
+    title:'health',
+     amount:1000}
+  ]
+const[details,setDetails]=useState(dummy);
+//handling user entered data
+const addExpenseHandler=(expense)=>{  
+  setDetails((prevDetails)=>{
+    return [expense,...prevDetails]}) 
 }
-console.log(details)
+
+  
   return (
     <div className="App">
-         <NewExpense onAddExpense={addExpenseHandler}></NewExpense>       
-      
-            < div className="expense-item-container">
-              {
-                details.map((val)=>{
-                  return(
-                    <Expenses items={val}></Expenses>
-                  )
-                }
-                )
-              }
-        
-        </div>       
+         <NewExpense onAddExpense={addExpenseHandler}></NewExpense>   
+          <div className='expense-item-container'  >         
+          <Expenses key={details.id} items={details}></Expenses>
+           </div>
+          
      </div>
  
   );
